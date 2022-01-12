@@ -193,19 +193,12 @@
             <div class="col-md-8">
                 <div class="ts-newsletter row align-items-center">
                     <div class="col-md-5 newsletter-introtext">
-                        <h4 class="text-white mb-0">Newsletter Sign-up</h4>
-                        <p class="text-white">Latest updates and news</p>
+                        <h4 class="text-white mb-0">For More information Email us</h4>
+                        <p class="text-white">support@jbslandscape.co.tz</p>
                     </div>
 
                     <div class="col-md-7 newsletter-form">
-                        <form action="#" method="post">
-                            <div class="form-group">
-                                <label for="newsletter-email" class="content-hidden">Newsletter Email</label>
-                                <input type="email" name="email" id="newsletter-email"
-                                    class="form-control form-control-lg"
-                                    placeholder="Your your email and hit enter" autocomplete="off">
-                            </div>
-                        </form>
+                       
                     </div>
                 </div>
                 <!-- Newsletter end -->

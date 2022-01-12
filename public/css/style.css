@@ -1,8 +1,8 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
 
-Template Name: Constra - Construction Html5 Template
-Description: Constra - Construction Html5 Template
+
+Description: Jbs-landscape company website
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -3659,3 +3659,56 @@ label {
       width: 1000px;
       background-color: #465746;
   }
+
+
+
+  /*********OUR GALLERY*********/
+.gallery{
+    padding: 80px 0px;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.gallery img{
+    background: #fff;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.text{
+    text-align: center;
+}
+
+
+#gallery-popup .modal-img{
+
+    width: 100%;
+
+}
+/********END OUR GALLERY*****/
+
+/*******Form****/
+.chan{
+    color: #2db83d;
+}
+
+.btn-chan{
+    background-color: #2db83d;
+}
+
+#remember{
+    background-color: #2db83d;
+}
+
+.cr{
+    width: 50px;
+}
+
+
+
+

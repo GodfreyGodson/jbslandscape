@@ -11,7 +11,7 @@
     <!-- Mobile Specific Metas
 ================================================== -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Jbslandscape">
+    <meta name="description" content="Jbslandscape Company">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
     <!-- Favicon
@@ -34,6 +34,9 @@
     <link rel="stylesheet" href="{{ asset('plugins/colorbox/colorbox.css') }}">
     <!-- Template styles-->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!-- admin styles-->
+    <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
+
 
 
 
@@ -57,13 +60,13 @@
                     <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
                         <ul class="list-unstyled">
                             <li>
-                                <a title="Facebook" href="#">
+                                <a title="Facebook" href="https://www.facebook.com">
                                     <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
                                 </a>
-                                <a title="Twitter" href="#">
+                                <a title="Twitter" href="https://twitter.com">
                                     <span class="social-icon"><i class="fab fa-twitter"></i></span>
                                 </a>
-                                <a title="Instagram" href="#">
+                                <a title="Instagram" href="https://www.instagram.com/">
                                     <span class="social-icon"><i class="fab fa-instagram"></i></span>
                                 </a>
                                 
@@ -87,7 +90,7 @@
 
                                 <div class="logo">
                                     <a class="d-block" href="{{ route('home')}}">
-                                        <img loading="lazy" src="images/logo0.png" alt="jbs">
+                                        <img loading="lazy" src="{{ asset('images/logo0.png')}}" alt="jbs">
                                     </a>
                                 </div>
                                 <!-- logo end -->
@@ -112,7 +115,7 @@
                                                 <li><a href="{{ route('aboutUs') }}">About Us</a></li>
                                                
                                               
-                                                <li><a href="{{ route('faqs')}}">Faq</a></li>
+                                                <li><a href="{{ route('faqs')}}">Download Company Profile</a></li>
                                                
                                             </ul>
                                         </li>
@@ -138,16 +141,33 @@
                                         
 
                                         <li class="nav-item dropdown">
-                                            <a href="{{ route('blog')}}" class="nav-link dropdown-toggle" >Blog 
+                                            <a href="{{ route('blog.index')}}" class="nav-link dropdown-toggle" >Blog 
                                                    </a>
                                            
                                         </li>
 
                                         <li class="nav-item"><a class="nav-link" href="{{ route('contacts')}}">Contact</a></li>
+                                        
+
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Admin
+                                                <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                @if (Session::get('LoggedUser'))
+                                                    <li><a href="{{ route('admin.logout')}}">Log out</a></li>
+                                                @else
+                                                    <li><a href="{{ route('admin.login')}}">Log in</a></li>
+                                                @endif
+                                                                                                                                                                                             
+                                                <li><a href="{{ route('blog.create')}}">Create article</a></li>
+                                            </ul>
+                                        </li>
 
                                         <li class="header-get-a-quote">
                                             <a class="btn btn-primary" href="{{ route('contacts')}}">Talk To Us </a>
                                         </li>
+
+                                        
                                     </ul>
                                 </div>
                             </nav>
@@ -181,12 +201,12 @@
                             more.</p>
                         <div class="footer-social">
                             <ul>
-                                <li><a href="#" aria-label="Facebook"><i
+                                <li><a href="https://www.facebook.com" aria-label="Facebook"><i
                                             class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#" aria-label="Twitter"><i
+                                <li><a href="https://twitter.com" aria-label="Twitter"><i
                                             class="fab fa-twitter"></i></a>
                                 </li>
-                                <li><a href="#" aria-label="Instagram"><i
+                                <li><a href="https://www.instagram.com/" aria-label="Instagram"><i
                                             class="fab fa-instagram"></i></a></li>
                                 
                             </ul>
@@ -211,13 +231,13 @@
                     <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
                         <h3 class="widget-title">Services</h3>
                         <ul class="list-arrow">
-                            <li><a href="{{ route('ourservices')}}">Residential Landscape Services</a></li>
-                            <li><a href="{{ route('ourservices')}}">Commercial Landscape Services</a></li>
-                            <li><a href="{{ route('ourservices')}}">Cleaning Services</a></li>
-                            <li><a href="{{ route('ourservices')}}">Civic Landscape Services</a></li>
-                            <li><a href="{{ route('ourservices')}}">Landscape Lighting</a></li>
-                            <li><a href="{{ route('ourservices')}}">Landscape Design</a></li>
-                            <li><a href="{{ route('ourservices')}}">Arboriculture (Tree Care and
+                            <li><a href="{{ route('residentials')}}">Residential Landscape Services</a></li>
+                            <li><a href="{{ route('commercials')}}">Commercial Landscape Services</a></li>
+                            <li><a href="{{ route('cleans')}}">Cleaning Services</a></li>
+                            <li><a href="{{ route('civics')}}">Civic Landscape Services</a></li>
+                            <li><a href="{{ route('lights')}}">Landscape Lighting</a></li>
+                            <li><a href="{{ route('designs')}}">Landscape Design</a></li>
+                            <li><a href="{{ route('arborcultures')}}">Arboriculture (Tree Care and
                                     Maintainance)</a></li>
                         </ul>
                     </div>
@@ -234,7 +254,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="copyright-info text-center text-md-left">
-                            <span>Copyright &copy;
+                            <span>Copyright &copy;jbslandscape company
                                 <script>
                                     document.write(new Date().getFullYear())
                                 </script>
@@ -247,8 +267,8 @@
                             <ul class="list-unstyled">
                                 <li><a href="{{ route('aboutUs')}}">About</a></li>
                                 <li><a href="{{ route('ourservices')}}">Our work</a></li>
-                                <li><a href="{{('faqs')}}">Faq</a></li>
-                                <li><a href="{{ route('blog')}}">Blog</a></li>
+                                <li><a href="{{('faqs')}}">Pdfs</a></li>
+                                <li><a href="{{ route('blog.index')}}">Blog</a></li>
                                 <li><a href="{{ route('contacts')}}"> Contact</a></li>
                             </ul>
                         </div>
@@ -272,6 +292,21 @@
 
     <!-- Javascript Files
   ================================================== -->
+
+  <script type="text/javascript">
+
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("gallery-item")) {
+        const src = e.target.getAttribute("src");
+        document.querySelector(".modal-img").src = src;
+        const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+        myModal.show();
+      }
+    })
+
+  </script>
+
 
     <!-- initialize jQuery Library -->
     <script src="{{ asset('plugins/jQuery/jquery.min.js') }}"></script>

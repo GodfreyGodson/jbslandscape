@@ -183,6 +183,7 @@
 <!-- Service end -->
 
 
+
 <section id="project-area" class="project-area light-bg">
     <div class="container">
         <div class="row text-center">
@@ -350,8 +351,8 @@
                     <div class="d-flex">
 
                         <div class="ts-service-info">
-                            <h3 class="service-box-title"><a href="{{ route('ourservices')}}">Residential Landscape
-                                    Services</a><a class="learn-more d-inline-block" href="{{ route('ourservices')}}"
+                            <h3 class="service-box-title"><a href="{{ route('residentials')}}">Residential Landscape
+                                    Services</a><a class="learn-more d-inline-block" href="{{ route('residentials')}}"
                                     aria-label="service-details"><i class="fa fa-caret-right"></i> Learn
                                     more</a>
                             </h3>
@@ -373,8 +374,8 @@
                     <div class="d-flex">
 
                         <div class="ts-service-info">
-                            <h3 class="service-box-title"><a href="{{ route('ourservices')}}">Commercial Landscape
-                                    Services</a> <a class="learn-more d-inline-block" href="{{ route('ourservices')}}"
+                            <h3 class="service-box-title"><a href="{{ route('commercials')}}">Commercial Landscape
+                                    Services</a> <a class="learn-more d-inline-block" href="{{ route('commercials')}}"
                                     aria-label="service-details"><i class="fa fa-caret-right"></i> Learn
                                     more</a>
                             </h3>
@@ -395,8 +396,8 @@
                     <div class="d-flex">
 
                         <div class="ts-service-info">
-                            <h3 class="service-box-title"><a href="{{ route('ourservices')}}">Civic Landscape
-                                    Services</a> <a class="learn-more d-inline-block" href="{{ route('ourservices')}}"
+                            <h3 class="service-box-title"><a href="{{ route('civics')}}">Civic Landscape
+                                    Services</a> <a class="learn-more d-inline-block" href="{{ route('civics')}}"
                                     aria-label="service-details"><i class="fa fa-caret-right"></i> Learn
                                     more</a></h3>
 
@@ -416,8 +417,8 @@
                     <div class="d-flex">
 
                         <div class="ts-service-info">
-                            <h3 class="service-box-title"><a href="{{ route('ourservices')}}">Landscape Design</a> <a
-                                    class="learn-more d-inline-block" href="{{ route('ourservices')}}"
+                            <h3 class="service-box-title"><a href="{{ route('designs')}}">Landscape Design</a> <a
+                                    class="learn-more d-inline-block" href="{{ route('designs')}}"
                                     aria-label="service-details"><i class="fa fa-caret-right"></i> Learn
                                     more</a>
                             </h3>
@@ -438,8 +439,8 @@
                     <div class="d-flex">
 
                         <div class="ts-service-info">
-                            <h3 class="service-box-title"><a href="{{ route('ourservices')}}">Cleaning Services</a> <a
-                                    class="learn-more d-inline-block" href="{{ route('ourservices')}}"
+                            <h3 class="service-box-title"><a href="{{ route('cleans')}}">Cleaning Services</a> <a
+                                    class="learn-more d-inline-block" href="{{ route('cleans')}}"
                                     aria-label="service-details"><i class="fa fa-caret-right"></i> Learn
                                     more</a>
                             </h3>
@@ -461,10 +462,10 @@
                     <div class="d-flex">
 
                         <div class="ts-service-info">
-                            <h3 class="service-box-title"><a href="{{ route('ourservices')}}">Arboriculture (Tree Care
+                            <h3 class="service-box-title"><a href="{{ route('arborcultures')}}">Arboriculture (Tree Care
                                     and
                                     Maintainance)</a> <a class="learn-more d-inline-block"
-                                    href="{{ route('ourservices')}}" aria-label="service-details"><i
+                                    href="{{ route('arborcultures')}}" aria-label="service-details"><i
                                         class="fa fa-caret-right"></i> Learn more</a>
                             </h3>
 
@@ -586,19 +587,12 @@
         <div class="col-md-8">
             <div class="ts-newsletter row align-items-center">
                 <div class="col-md-5 newsletter-introtext">
-                    <h4 class="text-white mb-0">Newsletter Sign-up</h4>
-                    <p class="text-white">Latest updates and news</p>
+                    <h4 class="text-white mb-0">Email Us Now</h4>
+                    <p class="text-white">Support@jbslandscape.co.tz</p>
                 </div>
 
                 <div class="col-md-7 newsletter-form">
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label for="newsletter-email" class="content-hidden">Newsletter Email</label>
-                            <input type="email" name="email" id="newsletter-email"
-                                class="form-control form-control-lg" placeholder="Your your email and hit enter"
-                                autocomplete="off">
-                        </div>
-                    </form>
+                   
                 </div>
             </div>
             <!-- Newsletter end -->
